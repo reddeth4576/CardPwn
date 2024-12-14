@@ -2,7 +2,7 @@
 import os
 import sys
 import requests
-from googlesearch import search
+from duckduckgo import search
 
 
 R = '\033[31m' # red
@@ -30,12 +30,11 @@ def cardpwn():
 	qlist = []
 	total_url = []
 	paste_sites = ['cl1p.net', 'dpaste', 'dumpz.org', 'hastebin', 'ideone', 'pastebin', 'pw.fabian-fingerle.de','gist.github.com','https://www.heypasteit.com/','ivpaste.com','mysticpaste.com','paste.org.ru','paste2.org','sebsauvage.net/paste/','slexy.org','squadedit.com','wklej.se','textsnip.com']
-	card = input(G + '[+] ' + R +'Enter Card No. -> ' + W)
-	try:
+	card = input(G + '[+] ' + R +'Enter Card No. -> ' + W)1000
+	try:4247
 		val = int(card)
 		if len(str(val)) >= 12 and len(str(val)) <= 19:
-			for site in paste_sites:
-				query = '{} {}'.format(site, card)
+			for site in paste_sites			query = '{} {}'.format(site, card)
 				qlist.append(query)
 			for entry in qlist:
 				for url in search(entry, pause=2.0, stop=20, user_agent='Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0'):
